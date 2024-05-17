@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToeicMCB</title>
+    <link rel="icon" href="./assets/img/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="toeic_mcb">
+        <header class="header">
+            <!-- nav-tablet mobile -->
+            <label for="nav__tabmobi--input" class="navbar__list--icon">
+                <i class="navbar__icon fa-solid fa-bars"></i>
+            </label>
+    
+            <input type="checkbox" hidden class="nav__input" id="nav__tabmobi--input">
+    
+            <label for="nav__tabmobi--input" class="nav__overlay"></label>
+    
+            <div class="nav__tabmobi">
+                <label for="nav__tabmobi--input" class="nav__mobile--close">
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <ul class="nav__list--tabmobi">
+                    <li><a href="#" class="nav__tabmobi--item">
+                            <i class="nav-icon-inline fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-book-open"></i>
+                        <span>Khóa học</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-book"></i>
+                        <span>Sách</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-file-pen"></i>
+                        <span>Luyện đề</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-calendar-days"></i>
+                        <span>Lịch khai giảng</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-newspaper"></i>
+                        <span>Bài viết</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-right-to-bracket"></i>
+                        <span>Đăng nhập</span>
+                        </a>
+                </ul>
+            </div>
+    
+            <!-- end nav-tablet mobile -->
+    
+            <div class="logo_header">
+                <img src="./assets/img/logo.jpg" alt="">
+                <span class="title__logo">TOEIC MCB</span>
+            </div>
+    
+            <div class="navbar">
+                <ul class="navbar__list">
+                    <li><a href="#" class="nav__item">Trang chủ</a></li>
+                    <li><a href="#" class="nav__item">Khóa học</a></li>
+                    <li><a href="#" class="nav__item">Sách</a></li>
+                    <li><a href="#" class="nav__item">Luyện đề</a></li>
+                    <li><a href="#" class="nav__item">Lịch khai giảng</a></li>
+                    <li><a href="#" class="nav__item">Bài viết</a></li>
+                </ul>
+            </div>
+    
+            <div class="sign_inout">
+                <button class="btn loginbtn">Đăng nhập</button>
+            </div>
+        </header> 
+        
+        <div class="modal">
+            <div class="modal__body">
+                <i class="icon-close fa-solid fa-xmark"></i>
+                <!-- Login form -->
+                <div class="auth__form form__login">
+                    <div class="auth__form_header">
+                        <img src="./assets/img/logo.jpg" alt=""> 
+                        <h1 class="auth__form_title">Đăng nhập tài khoản ToeicMCB</h1> 
+                        <p class="auth__form_desc">Mỗi người sử dụng riêng 1 tài khoản, một tài khoản nhiều người sử dụng chung sẽ bị khóa.</p>  
+                    </div>
+                    <div class="auth__form_body">
+                        <div class="auth__form_box">
+                            <input type="text" placeholder="Email">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="auth__form_box">
+                            <input type="password" placeholder="Nhập mật khẩu">
+                            <span class="form-message"></span>
+                        </div>
+                        <button class="btn auth__form_btn">Đăng nhập</button>
+                        <p class="auth__form_haveacc">
+                            Bạn chưa có tài khoản? 
+                            <a href="#" class="register">Đăng ký</a>
+                        </p>
+                        <p class="auth__form_forgetpass">
+                            Quên mật khẩu? 
+                        </p>
+                    </div> 
+                    <div class="auth__form_footer">
+                        Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
+                        <a href="" target="">điều khoản sử dụng</a>
+                        của chúng tôi.
+                    </div>
+                </div>
+
+                <!-- Resgiter form -->
+                <div class="auth__form form__register">
+                    <div class="auth__form_header">
+                        <img src="./assets/img/logo.jpg" alt=""> 
+                        <h1 class="auth__form_title">Đăng ký tài khoản ToeicMCB</h1> 
+                        <p class="auth__form_desc">Mỗi người sử dụng riêng 1 tài khoản, một tài khoản nhiều người sử dụng chung sẽ bị khóa.</p>  
+                    </div>
+                    <div class="auth__form_body">
+                        <div class="auth__form_box">
+                            <input id="fullname" name="fullname" type="text" placeholder="Họ và tên" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="auth__form_box">
+                            <input id="email" name="email"  type="text" placeholder="Email" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="auth__form_box">
+                            <input type="text" placeholder="Số điện thoại" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="auth__form_box">
+                            <input id="password" name="password"  type="password" placeholder="Nhập mật khẩu" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="auth__form_box">
+                            <input id="password_confirmation" name="password_confirmation"  type="password" placeholder="Nhập lại mật khẩu" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        <button class="btn auth__form_btn">Đăng ký</button>
+                        <p class="auth__form_haveacc">
+                            Bạn đã có tài khoản? 
+                            <a href="#" class="login">Đăng nhập</a>
+                        </p>
+                    </div> 
+                    <div class="auth__form_footer">
+                        Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
+                        <a href="" target="">điều khoản sử dụng</a>
+                        của chúng tôi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <section class="intro">
+            <div class="content__intro">
+                <h1>Toeic MCB<br> Cam kết trọn đời</h1>
+                <p>Toeic là trung tâm duy nhất tại Hồ Chí Minh có lộ trình đào tạo TOEIC Học 1 Lần Là Đạt, tạo ra sự tiến bộ từng ngày cho những học viên đã từng sợ, học đi học lại nhiều lần nhưng không đạt, những người mong muốn học TOEIC ra trường hay đạt trên 800 TOEIC từ lần đầu học để sử dụng thành thạo tiếng Anh, tạo ra lợi thế khác biệt trong môi trường cạnh tranh việc làm khốc liệt”.</p>
+                <div class="socials">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <button class="btn">Tìm hiểu ngay</button>
+            </div>
+            <div class="img__intro">
+                <img src="./assets/img/home_img.jpeg" alt="">
+            </div>
+        </section>
+    
+        <section class="content">
+            <div class="content__info">
+                <div class="info__mcb">
+                    <div class="info__mcb-img">
+                        <img src="./assets/img/toeic.jpg" alt="" class="toeicmcb">
+                    </div>
+                    <h3>TOEIC</h3>
+                    <p>Lộ trình luyện thi cấp tốc</p>
+                </div>
+    
+                <div class="info__mcb">
+                    <div class="info__mcb-img">
+                        <img src="./assets/img/ielts.jpg" alt="" class="toeicmcb">
+                    </div>
+                    <h3>IELTS</h3>
+                    <p>Lộ trình học hiểu quả</p>
+                </div>
+    
+                <div class="info__mcb">
+                    <div class="info__mcb-img">
+                        <img src="./assets/img/kynang.png" alt="" class="toeicmcb">
+                    </div>
+                    <h3>4 KỸ NĂNG</h3>
+                    <p>Lộ trình học và ôn thi hiệu quả</p>
+                </div>
+    
+                <div class="info__mcb">
+                    <div class="info__mcb-img">
+                        <img src="./assets/img/video.png" alt="" class="toeicmcb">
+                    </div>
+                    <h3>Video bài giảng chất lượng cao</h3>
+                    <p>Bởi đội ngũ giáo viên xuất sắc và tận tâm IELTS 8.0 - 8.5, cựu du học sinh, tốt nghiệp tại các trường Đại học danh tiếng</p>
+                </div>
+                <div class="info__mcb">
+                    <div class="info__mcb-img">
+                        <img src="./assets/img/bai.png" alt="" class="toeicmcb">
+                    </div>
+                    <h3>Đầy đủ bài mẫu, bài tập, mini test, progress test như thi thật</h3>
+                    <p>Bộ tài liệu đã giúp 600 học viên đã đạt IELTS 7.0-8.5 tính tới tháng 5/2021</p>
+                </div>
+                <div class="info__mcb">
+                    <div class="info__mcb-img">
+                        <img src="./assets/img/kynang4.png" alt="" class="toeicmcb">
+                    </div>
+                    <h3>Tài liệu 4 kỹ năng siêu hot</h3>
+                    <p>Trọn bộ tài liệu 4 kỹ năng cho người mất gốc</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="about">
+            <div class="img__about">
+                <img src="./assets/img/aboutmcb.jpg" alt="">
+            </div>
+            <div class="about__content">
+                <h2>Bắt đầu tìm kiếm khóa học dễ dàng</h2>
+                <p>Các khoá học của ToeicMCB được biên soạn và trình bày một cách khoa học nhất</p>
+                <div class="search_mcb">
+                    <button class="btn btn_about" >Khóa học IELTS</button>
+                    <button class="btn btn_about" >Khóa học TOEIC</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="student">
+            <div class="student__think">
+                <h2>Học viên nói gì về ToeicMCB</h2>
+            </div>
+            <div class="wrapper">
+                <i class="icon_carousel fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <div class="student__mcb">
+                        <div class="student__content">
+                            <div class="student__info-img">
+                                <img src="./assets/img/ong1.jpg" alt="" class="toeicmcb">
+                            </div>
+                            <div class="student__info">
+                                <span>Anh Hoàng</span>
+                                <h4>Đại học Công nghiệp</h4>
+                            </div>
+                        </div>
+                        <p>Lộ trình học Toeic đã giúp tôi đạt Target 550 chỉ trong vòng 3 tháng chăm chỉ luyện tập. Từ mất gốc với nỗ lực xây nền kiến thức Từ Vựng - Ngữ Pháp chăm chỉ và nhanh chóng nhất có thể, tôi đã tự tin biến kiến thức đã học thành vốn của riêng mình. Phần luyện Listening và Reading tôi áp dụng các phương pháp được chia sẻ để nhanh chóng xử lý các dạng đề thi. Với tôi lộ trình học này rất tuyệt với. Cảm ToeicMCB đã cho tôi được trải nghiệm sản phẩm từ sớm.</p>
+                    </div>
+                    <div class="student__mcb">
+                        <div class="student__content">
+                            <div class="student__info-img">
+                                <img src="./assets/img/ong2.jpg" alt="" class="toeicmcb">
+                            </div>
+                            <div class="student__info">
+                                <span>Ánh Dương</span>
+                                <h4>Đại học Mở TP. HCM</h4>
+                            </div>
+                        </div>
+                        <p>Vốn là một đứa mất gốc tiếng anh mà chỉ sau 7 tháng gắn bó với trung tâm mình đã đạt được kết quả như mong đợi, thật sự phải cảm ơn
+                            ToeicMCB rất nhiều. Cảm ơn thầy Tài đã đồng hành cùng em từ những ngày đầu tiên, từng bước giúp em cải thiện phần listening, cảm ơn cô Vy đã nhiệt huyết, tận tình chỉ dạy những kiến thức, kỹ năng để em có thể bình tĩnh, tự tin
+                            làm bài.</p>
+                    </div>
+                    <div class="student__mcb">
+                        <div class="student__content">
+                            <div class="student__info-img">
+                                <img src="./assets/img/ong3.jpg" alt="" class="toeicmcb">
+                            </div>
+                            <div class="student__info">
+                                <span>Hoàng Bách</span>
+                                <h4>ĐH Kinh tế Quốc dân</h4>
+                            </div>
+                        </div>
+                        <p>Sau 1 tháng cấp tốc ôn thi L&R Toeic tại ToeicMCB, nhờ có sự hỗ trợ của anh Nguyễn Quang Vũ và sự giảng dạy vô cùng nhiệt tình từ các anh chị
+                            giảng viên Phùng Anh, Ngọc Linh, Phạm Linh đã giúp em cảm được tấm bằng 800+ trên tay. Tiếp tục phấn đấu 900+ trong tương lai gần và hoàn thiện nốt nửa đoạn đường còn lại thôi!</p>
+                    </div>
+                    <div class="student__mcb">
+                        <div class="student__content">
+                            <div class="student__info-img">
+                                <img src="./assets/img/ong3.jpg" alt="" class="toeicmcb">
+                            </div>
+                            <div class="student__info">
+                                <span>Xuân Thanh</span>
+                                <h4>Đại học Hoa sen</h4>
+                            </div>
+                        </div>
+                        <p>Vượt qua nỗi sợ tiếng Anh cùng ToeicMCB mình vốn là một đứa mất gốc tiếng Anh, lại còn
+                            có tâm lý sợ hãi khi học môn này. Sau khi tham gia khóa học tại ToeicMCB, mình đã có thể tự tin giao tiếp tiếng Anh và đạt được điểm số cao
+                            trong kỳ thi. Điều mình ấn tượng nhất ở ToeicMCB là đội ngũ giáo viên nhiệt tình, chuyên nghiệp và phương pháp giảng dạy hiệu quả. Các bài học được thiết kế sinh động, giúp mình dễ dàng tiếp thu kiến
+                            thức và luyện tập kỹ năng.</p>
+                    </div>
+                    <div class="student__mcb">
+                        <div class="student__content">
+                            <div class="student__info-img">
+                                <img src="./assets/img/ong3.jpg" alt="" class="toeicmcb">
+                            </div>
+                            <div class="student__info">
+                                <span>Thảo My</span>
+                                <h4>Đại học Văn Lang</h4>
+                            </div>
+                        </div>
+                        <p>Em rất vui vì đã được trải nghiệm khóa ToeicMCB. Học qua Lộ trình đầy đủ 3 chặng từ Cơ Bản, Trung Cấp, Chuyên Sâu TOEIC em mới thấy kiến thức mình tiếp thu được đã vận dụng trực tiếp vào thực tế luôn, chứ không như kiểu luyện Cấp Tốc, học xong lại quên mất. Đặc biệt vốn từ vựng của em tích lũy nhanh khủng khiếp nhờ phương pháp học rất hay ở ToeicMCB. Bản thân em thấy rằng việc sở hữu vốn từ vựng đa dạng và ăn điểm thực sự rất hiệu quả trong quá trình làm đề TOEIC. Ngoài ra, vốn từ vựng đó còn giúp rất nhiều cho em vận dụng trong môi trường làm việc.</p>
+                    </div>
+                </div>
+                <i class="icon_carousel fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="footer">
+                <div class="footer__col">
+                    <div class="footer_content">
+                        <div class="logo_footer">
+                            <img src="./assets/img/logo.jpg" alt="">
+                            <span>TOEIC MCB</span>
+                        </div>
+                        <p>Điện thoại: 0931 42 8899 <br> Email: contact@toeicmcb.edu.vn</p>
+                        <p>Địa chỉ: 29 Nguyễn Văn Nghi, Phường 4, Quận Gò Vấp , TP. Hồ Chí Minh</p>
+                    </div>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="heading__footer">VỀ TOEIC MCB</h3>
+                    <ul class="footer_list">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Khóa học</a></li>
+                        <li><a href="">Sách</a></li>
+                        <li><a href="">Luyện đề</a></li>
+                        <li><a href="">Lịch khai giảng</a></li>
+                        <li><a href="">Bài viết</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__col">
+                    <h3 class="heading__footer">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="socials">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_end">
+                <p>© 2018 - 2024 ToeicMCB. Nền tảng học Tiếng Anh</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <script src="./script.js"></script>
+    <script>
+        Validator({
+            form: '.form__register',
+            errorSelector: '.form-message',
+            formGroupSelector: '.auth__form_box',
+            rules: [
+                Validator.isRequired('#fullname', 'Vui lòng nhập tên dầy đủ của bạn'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 6),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isConfirmed('#password_confirmation', function(){
+                    return document.querySelector('.form__register #password').value;
+                }, 'Mật khẩu nhập lại không chính xác'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
+    </script>
+</body>
+</html>

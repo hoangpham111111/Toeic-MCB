@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToeicMCB</title>
+    <link rel="icon" href="./assets/img/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="toeic_mcb">
+        <header class="header">
+            <!-- nav-tablet mobile -->
+            <label for="nav__tabmobi--input" class="navbar__list--icon">
+                <i class="navbar__icon fa-solid fa-bars"></i>
+            </label>
+    
+            <input type="checkbox" hidden class="nav__input" id="nav__tabmobi--input">
+    
+            <label for="nav__tabmobi--input" class="nav__overlay"></label>
+    
+            <div class="nav__tabmobi">
+                <label for="nav__tabmobi--input" class="nav__mobile--close">
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <ul class="nav__list--tabmobi">
+                    <li><a href="#" class="nav__tabmobi--item">
+                            <i class="nav-icon-inline fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-book-open"></i>
+                        <span>Khóa học</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-book"></i>
+                        <span>Sách</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-file-pen"></i>
+                        <span>Luyện đề</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-calendar-days"></i>
+                        <span>Lịch khai giảng</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-newspaper"></i>
+                        <span>Bài viết</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav__tabmobi--item">
+                        <i class="nav-icon-inline fa-solid fa-right-to-bracket"></i>
+                        <span>Đăng nhập</span>
+                        </a>
+                </ul>
+            </div>
+    
+            <!-- end nav-tablet mobile -->
+    
+            <div class="logo_header">
+                <img src="./assets/img/logo.jpg" alt="">
+                <span class="title__logo">TOEIC MCB</span>
+            </div>
+    
+            <div class="navbar">
+                <ul class="navbar__list">
+                    <li><a href="#" class="nav__item">Trang chủ</a></li>
+                    <li><a href="#" class="nav__item">Khóa học</a></li>
+                    <li><a href="#" class="nav__item">Sách</a></li>
+                    <li><a href="#" class="nav__item">Luyện đề</a></li>
+                    <li><a href="#" class="nav__item">Lịch khai giảng</a></li>
+                    <li><a href="#" class="nav__item">Bài viết</a></li>
+                </ul>
+            </div>
+    
+            <div class="sign_inout">
+                <button class="btn loginbtn">Đăng nhập</button>
+            </div>
+        </header> 
+
+        <div class="modal">
+            <div class="modal__body">
+                <i class="icon-close fa-solid fa-xmark"></i>
+                <!-- Login form -->
+                <div class="auth__form form__login">
+                    <div class="auth__form_header">
+                        <img src="./assets/img/logo.jpg" alt=""> 
+                        <h1 class="auth__form_title">Đăng nhập tài khoản ToeicMCB</h1> 
+                        <p class="auth__form_desc">Mỗi người sử dụng riêng 1 tài khoản, một tài khoản nhiều người sử dụng chung sẽ bị khóa.</p>  
+                    </div>
+                    <div class="auth__form_body">
+                        <div class="auth__form_box">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="auth__form_box">
+                            <input type="password" placeholder="Nhập mật khẩu">
+                        </div>
+                        <button class="btn auth__form_btn">Đăng nhập</button>
+                        <p class="auth__form_haveacc">
+                            Bạn chưa có tài khoản? 
+                            <a href="#" class="register">Đăng ký</a>
+                        </p>
+                        <p class="auth__form_forgetpass">
+                            Quên mật khẩu? 
+                        </p>
+                    </div> 
+                    <div class="auth__form_footer">
+                        Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
+                        <a href="" target="">điều khoản sử dụng</a>
+                        của chúng tôi.
+                    </div>
+                </div>
+
+                <!-- Resgiter form -->
+                <div class="auth__form form__register">
+                    <div class="auth__form_header">
+                        <img src="./assets/img/logo.jpg" alt=""> 
+                        <h1 class="auth__form_title">Đăng ký tài khoản ToeicMCB</h1> 
+                        <p class="auth__form_desc">Mỗi người sử dụng riêng 1 tài khoản, một tài khoản nhiều người sử dụng chung sẽ bị khóa.</p>  
+                    </div>
+                    <div class="auth__form_body">
+                        <div class="auth__form_box">
+                            <input type="text" placeholder="Họ và tên">
+                        </div>
+                        <div class="auth__form_box">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="auth__form_box">
+                            <input type="text" placeholder="Số điện thoại">
+                        </div>
+                        <div class="auth__form_box">
+                            <input type="password" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="auth__form_box">
+                            <input type="password" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <button class="btn auth__form_btn">Đăng ký</button>
+                        <p class="auth__form_haveacc">
+                            Bạn đã có tài khoản? 
+                            <a href="#" class="login">Đăng nhập</a>
+                        </p>
+                    </div> 
+                    <div class="auth__form_footer">
+                        Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
+                        <a href="" target="">điều khoản sử dụng</a>
+                        của chúng tôi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__courses">
+            <div class="sidebar__course">
+                <ul class="sidebar__list">
+                    <li><a href="#" class="sidebar__item">Toeic</a></li>
+                    <li><a href="#" class="sidebar__item">Ielts</a></li>
+                    <li><a href="#" class="sidebar__item">4 Skills</a></li>
+                </ul>
+            </div>
+            <div class="list_courses">
+                <div class="content_course">
+                    <div class="heading__course">
+                        <h2 class="title__course">Khóa học Toeic</h2>
+                    </div>
+                    <div class="grid body__course--list">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_part5.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_part6.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_part7.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_part34.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Xác định từ khóa trong Toeic Listening</a>
+                                </h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="content_course">
+                    <div class="heading__course">
+                        <h2 class="title__course">Khóa học Ielts</h2>
+                    </div>
+                    <div class="grid body__course--list">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="content_course">
+                    <div class="heading__course">
+                        <h2 class="title__course">4 Skills</h2>
+                    </div>
+                    <div class="grid body__course--list">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            <div class="col l-3 m-6 c-6 body__course--item">
+                                <a href="" class="body_course-img">
+                                    <img src="./assets/img/toeic_course.jpg" alt="" class="imgcourse">
+                                </a>
+                                <h3 class="body_course-desc">
+                                    <a href="">Kiến thức cơ bản</a>
+                                </h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="footer__col">
+                    <div class="footer_content">
+                        <div class="logo_footer">
+                            <img src="./assets/img/logo.jpg" alt="">
+                            <span>TOEIC MCB</span>
+                        </div>
+                        <p>Điện thoại: 0931 42 8899 <br> Email: contact@toeicmcb.edu.vn</p>
+                        <p>Địa chỉ: 29 Nguyễn Văn Nghi, Phường 4, Quận Gò Vấp , TP. Hồ Chí Minh</p>
+                    </div>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="heading__footer">VỀ TOEIC MCB</h3>
+                    <ul class="footer_list">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Khóa học</a></li>
+                        <li><a href="">Sách</a></li>
+                        <li><a href="">Luyện đề</a></li>
+                        <li><a href="">Lịch khai giảng</a></li>
+                        <li><a href="">Bài viết</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__col">
+                    <h3 class="heading__footer">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="socials">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_end">
+                <p>© 2018 - 2024 ToeicMCB. Nền tảng học Tiếng Anh</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <script src="./script.js"></script>
+</body>
+</html>

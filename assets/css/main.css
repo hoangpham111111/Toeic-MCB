@@ -1,0 +1,67 @@
+:root{
+    --main-color: #137af4;
+    --while-color: #ffffff;
+    --font-color: #232433;
+    --orange-color: #ff5e00;
+    --height: 66px;
+
+    --font-size: 1.6rem;
+}
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 14px 18px;
+    border-radius: 28px;
+    font-weight: 600;
+    background: var(--main-color);
+    font-size: var(--font-size);
+    color: var(--while-color);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.c-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.c-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+} */
+
+
+
+
+
+
+
+
